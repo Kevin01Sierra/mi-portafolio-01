@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --color-primario: #222831;
-    --color-secundario: #EEEEEE;
-    --color-terciario: #00ADB5;
-    --color-hover: #393E46;
+    --color-primario: #F9F7F7;
+    --color-secundario: #112D4E;
+    --color-terciario: #3F72AF;
+    --color-hover: #DBE2EF;
 
     --fuente-texto: "Montserrat", serif;
     --fuente-titulo: "Krona One", serif;
@@ -27,34 +27,36 @@ body{
 
 .header__menu{
     display: flex;
-    gap: 80px;
+    gap: 100px;
 }
 
 .header__menu__link{
     font-family: var(--fuente-texto);
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
 }
 
 .presentacion{
-    padding: 6% 15%;
+    padding: 6% 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .presentacion__contenido{
-    width: 615px;
+    width: 650px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 36px;
 }
 
 .presentacion__contenido__titulo{
     font-family: var(--fuente-titulo);
     font-size: 36px;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .titulo-destaque{
@@ -63,8 +65,16 @@ body{
 
 .presentacion__contenido__texto{
     font-family: var(--fuente-texto);
-    font-size: 24px;
+    font-size: 28px;
+    text-align: justify;
+    line-height: 1.5;
 }
+
+.presentacion__contenido__texto a{
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
 
 .presentacion__enlaces{
     display: flex;
@@ -100,6 +110,15 @@ body{
     background-color: var(--color-hover);
 }
 
+.presentacion__imagen {
+    width: 615px;
+    height: 615px;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 5px solid var(--color-terciario); 
+}
 
 .footer{
     background-color: var(--color-terciario);
